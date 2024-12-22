@@ -30,7 +30,8 @@ output {
     elasticsearch {
         hosts => ["localhost:9200"]
     }
-}```
+}
+```
   b. Open CMD to logstash bin location - "F:\logstash-8.17.0-windows-x86_64\logstash-8.17.0\bin" and run the command "logstash -f bin\logstash.conf"
   c. Then it will read the complete log and send all the data to elastic search
 
