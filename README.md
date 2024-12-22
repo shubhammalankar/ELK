@@ -15,7 +15,8 @@ Steps to install the ELK Stack:
    d. Uncomment the setting in the "elasticsearch.hosts: ["http://localhost:9200"]" in the "F:\kibana-8.17.0-windows-x86_64\kibana-8.17.0\config\kibana.yml" path
 4. Start Log stash:
    a. create a file by name - logstash.conf in logstash/bin path and enter below codoe in it
-```input {
+```
+input {
     file {
         path => "F:/ELKDemoProject/elk-stack.log"
         start_position => "beginning"
