@@ -6,13 +6,13 @@ Steps to install the ELK Stack:
 2. Start Elastic search:
    a. Open CMD in the bin location of Elastic folder
    b. path example
-   '''
+   ```
    cd .\elasticsearch-8.17.0\bin\
-   '''
+   ```
    To start the elastic enter the command in CMD.
-   '''
+   ```
    elasticsearch.bat
-   '''
+   ```
    c. Elastic search will run on default port 9200
    d. Change the setting in "\elasticsearch-8.17.0\config\elasticsearch.yml" from "xpack.security.enabled: true" to "xpack.security.enabled: false" 
 4. Start Kibana:
