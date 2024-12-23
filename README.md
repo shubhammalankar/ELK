@@ -16,7 +16,7 @@ Steps to install the ELK Stack:
    ```  
    e. Elastic search will run on default port 9200
    f. Enter the URL in your browser - `localhost:9200`
-4. Start Kibana:  
+3. Start Kibana:  
    a. Open CMD in the bin loaction of kibana folder  
    b. Uncomment `elasticsearch.hosts: ["http://localhost:9200"]` in the path `F:\kibana-8.17.0-windows-x86_64\kibana-8.17.0\config\kibana.yml`  
    c. Change the path to - `cd .\kibana-8.17.0\bin\`  
@@ -26,7 +26,7 @@ Steps to install the ELK Stack:
    ```  
    e. Kibana will run on default port 5601  
    f. Enter the URL in your browser - `localhost:5601'  
-6. Start Log stash:  
+4. Start Log stash:  
    a. create a file by name - `logstash.conf` in `.\logstash\bin` and enter below code in it  
    ```
    input {
@@ -57,7 +57,7 @@ Steps to install the ELK Stack:
       -Open the URL `localhost:9200/_cat/indices`  
       -You can open the index file in "http://localhost:9200/logstash-demo/_search"  
       -Here we can only view `logstash-demo` index named files in kibana console   
-6. Creating a dashboard in Kibana
+5. Creating a dashboard in Kibana
   
 
  
