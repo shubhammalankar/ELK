@@ -4,8 +4,9 @@ Steps to install the ELK Stack:
 
 1. Download ELK stack softwares from there website. Unzip it all of them.
 2. Start Elastic search:  
-   a. Open CMD in the bin location of Elastic folder  
-   b. path example
+   a. Open CMD in the bin location of Elastic folder
+   b. Change `xpack.security.enabled: true` to `xpack.security.enabled: false` in `\elasticsearch-8.17.0\config\elasticsearch.yml`     
+   c. Change the path to
    `
    cd .\elasticsearch-8.17.0\bin\
    `  
@@ -13,14 +14,19 @@ Steps to install the ELK Stack:
    ```
    elasticsearch.bat
    ```  
-   c. Elastic search will run on default port 9200  
-   d. Change the setting in "\elasticsearch-8.17.0\config\elasticsearch.yml" from "xpack.security.enabled: true" to "xpack.security.enabled: false"  
-4. Start Kibana:
+   d. Elastic search will run on default port 9200
+   e. Enter the URL in your browser - `localhost:9200`
+4. Start Kibana:  
    a. Open CMD in the bin loaction of kibana folder
-   b. Path example - "\kibana-8.17.0\bin\" start or enter the "kibana.bat" in the CMD
-   c. Elastic seach will run on default port 5601
-   d. Uncomment the setting in the "elasticsearch.hosts: ["http://localhost:9200"]" in the "F:\kibana-8.17.0-windows-x86_64\kibana-8.17.0\config\kibana.yml" path
-5. Start Log stash:
+   b. Uncomment `elasticsearch.hosts: ["http://localhost:9200"]` in the path `F:\kibana-8.17.0-windows-x86_64\kibana-8.17.0\config\kibana.yml`  
+   c. Change the path to - `cd .\kibana-8.17.0\bin\`
+   To start kibana enter the command in the CMD  
+   '''
+   kibana.bat
+   '''  
+   d. Kibana will run on default port 5601
+   e. Enter the URL in your browser - `localhost:5601'
+6. Start Log stash:
    a. create a file by name - logstash.conf in logstash/bin path and enter below codoe in it
 ```
 input {
