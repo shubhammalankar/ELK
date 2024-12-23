@@ -54,8 +54,8 @@ Steps to install the ELK Stack:
    ```  
    c. Then it will read the complete log and send all the data to elastic search.  
    d. To verify the indices -  
-      -Open the URL `localhost:9200/_cat/indices`
-      -You can open the index file in "http://localhost:9200/logstash-demo/_search"
+      -Open the URL `localhost:9200/_cat/indices`  
+      -You can open the index file in "http://localhost:9200/logstash-demo/_search"  
       -Here we can only view `logstash-demo` index named files in kibana console   
 6. Creating a dashboard in Kibana
   
