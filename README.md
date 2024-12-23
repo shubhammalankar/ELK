@@ -3,12 +3,12 @@ ELK first project
 Steps to install the ELK Stack:
 
 1. Download ELK stack softwares from there website. Unzip it all of them.
-2. Start Elastic search:
+2. Start Elastic search:  
    a. Open CMD in the bin location of Elastic folder
    b. path example
-   ```
+   `
    cd .\elasticsearch-8.17.0\bin\
-   ```
+   `  
    To start the elastic enter the command in CMD.
    ```
    elasticsearch.bat
